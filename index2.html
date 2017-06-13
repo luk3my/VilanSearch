@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Super Vilan search</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <h1>Super Vilan search</h1>
+
+        <div id="search">
+            <label>Choose a superhero</label>
+            <select id="myText">
+    <option value="batman">Batman</option>
+    <option value="superman">Superman</option>
+    <option value="ironman">Ironman</option>
+    <option value="wolverine">Wolverine</option>
+    <option value="deadpool">Deadpool</option>
+    <option value="Spiderman">Spiderman</option>
+  </select>
+            <input type="button" value="Find Vilan" onclick="myFunction();">
+        </div>
+
+        <div class="Supervilan row">
+            <img id="batimg" type="button" value="batman" class="col-lg-2" src="images/batman.jpg" alt="batman" height="200" width="200">
+            <img id="superimg" value class="col-lg-2" src="images/superman.jpg" alt="batman" height="200" width="200">
+            <img id="ironimg" class="col-lg-2" src="images/ironman.jpg" alt="batman" height="200" width="200">
+            <img id="wolvimg"class="col-lg-2" src="images/wolverine.jpg" alt="batman" height="200" width="200">
+            <img id="deadimg"class="col-lg-2" src="images/deadpool.jpg" alt="batman" height="200" width="200">
+            <img id="spiderimg"class="col-lg-2" src="images/spiderman.jpg" alt="batman" height="200" width="200">
+        </div>
+
+    </div>
+
+    <script>
+        function myFunction() {
+            x = document.getElementById("myText");
+            var Shero = x.value;
+            var newHero = heros.find(function (newHero) {
+                if (newHero.name === Shero) {
+                    alert(newHero.vilan);
+                    var newVilan = newHero.vilan;
+                }
+            });
+        };
+
+        var heros = [
+
+            { name: 'batman', vilan: 'bane' },
+            { name: 'superman', vilan: 'lex luther' },
+            { name: 'ironman', vilan: 'iron monger' },
+            { name: 'wolverine', vilan: 'magneto' },
+            { name: 'deadpool', vilan: 'T-ray' },
+            { name: 'Spiderman', vilan: 'dr octopus' }
+
+        ];
+    </script>
+</body>
+
+</html>

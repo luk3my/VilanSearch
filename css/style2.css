@@ -1,0 +1,178 @@
+body {
+    background: url('https://blogrebellive.files.wordpress.com/2013/09/grey-background-for-site11.jpg') no-repeat;
+    background-size: cover;
+}
+
+/* text */
+
+h1 {
+    text-align: center;
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 45px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 150px;
+    margin-top: 180px;
+}
+
+
+input[type="submit"] {
+ display: block;
+ text-indent: -9999em;
+}
+
+/*button style*/ 
+
+#bm input{
+    background: url('https://www.eaglemoss.com/uploads/142005360377776/original.jpg') no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    height: 200px;
+    width: 200px;
+    border: none;
+    box-shadow: 10px 10px 10px;
+}
+
+.myButton input:hover{
+    filter: grayscale(1.0);
+}
+
+#sm input{
+    background: url('http://pm1.narvii.com/6199/421b9b1360836a031620abd3bb1aea4682848387_hq.jpg') no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    height: 200px;
+    width: 200px;
+    border: none;
+    box-shadow: 10px 10px 10px;
+}
+
+#im input{
+    background: url('https://s-media-cache-ak0.pinimg.com/736x/69/21/84/69218426116a474d0180e6a1b8908258.jpg') no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    height: 200px;
+    width: 200px;
+    border: none;
+    box-shadow: 10px 10px 10px;
+}
+
+#wvrn input{
+    background: url('http://www.sgi.org.br/wp-content/uploads/2012/06/os-7-mais-wolverine.jpg') no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    height: 200px;
+    width: 200px;
+    border: none;
+    box-shadow: 10px 10px 10px;
+}
+
+#dp input{
+    background: url('http://sm.ign.com/t/ign_ap/news/c/comic-con-/comic-con-2015-spider-man-and-deadpool-team-up-for_fx5f.640.jpg') no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    height: 200px;
+    width: 200px;
+    border: none;
+    box-shadow: 10px 10px 10px;
+}
+
+#spdrm input{
+    background: url('http://wallpapersin4k.net/wp-content/uploads/2017/02/Last-Hours-Of-Living-Comic-Wallpapers-8.jpg') no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+    height: 200px;
+    width: 200px;
+    border: none;
+    box-shadow: 10px 10px 10px;
+}
+
+/* vilan pictures */
+
+
+#qmark {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+}
+
+#banepic {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 99999;
+    box-shadow: 18px 18px 10px;
+}
+
+
+
+#lexpic {
+     display: none;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 99999;
+    box-shadow: 18px 18px 10px;
+
+}
+
+#mongerpic {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 99999;
+    box-shadow: 18px 18px 10px;
+
+}
+
+#magpic {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 99999;
+    box-shadow: 18px 18px 10px;
+
+}
+
+#traypic {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 99999;
+    box-shadow: 18px 18px 10px;
+
+}
+
+#dococtpic {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 99999;
+    box-shadow: 18px 18px 10px;
+
+}
+
+
+/* vilan text */
+
+.vilanpic h1{
+    display: none;
+    font-size: 60px;
+    margin-top: 40px;
+    margin-bottom: -40px;
+}
+
+.vpic{
+
+}
+
+.vilanpic2{
+    display: block;
+    opacity: 0.6;
+    transition: 3s;
+}

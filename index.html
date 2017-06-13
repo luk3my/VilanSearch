@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Super Vilan search</title>
+</head>
+
+<body>
+  <h1>Super Vilan search</h1>
+
+  <div id="search">
+    <label>Choose a superhero</label>
+    <select id="myText">
+    <option value="batman">Batman</option>
+    <option value="superman">Superman</option>
+    <option value="ironman">Ironman</option>
+    <option value="wolverine">Wolverine</option>
+    <option value="deadpool">Deadpool</option>
+    <option value="Spiderman">Spiderman</option>
+  </select>
+    <input type="button" value="Find Vilan" onclick="myFunction();">
+  </div>
+
+  <script>
+    var Shero = null;
+
+    function myFunction() {
+      x = document.getElementById("myText");
+      var Shero = x.value;
+      console.log(Shero)
+      return (Shero)
+    };
+
+    var heros = [
+
+      { name: 'batman', vilan: 'bane' },
+      { name: 'superman', vilan: 'lex luther' },
+      { name: 'ironman', vilan: 'iron monger' },
+      { name: 'wolverine', vilan: 'magneto' },
+      { name: 'deadpool', vilan: 'T-ray' },
+      { name: 'Spiderman', vilan: 'dr octopus' }
+
+    ];
+
+
+    var newHero = heros.find(function (newHero) {
+      if (newHero.name === Shero) {
+        alert(newHero.vilan);
+
+      }
+    });
+  </script>
+</body>
+
+</html>

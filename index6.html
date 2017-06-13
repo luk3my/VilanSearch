@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Super Vilan search</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Fonts -->
+
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <h1>Who is the arch nemisis of....</h1>
+
+
+        <div class="Supervilan row">
+
+            <div id="bm" class="myButton col-lg-2"><input id="batman" type="submit" value="batman" onclick="myFunction1();"></div>
+            <div id="sm" class="myButton col-lg-2"><input id="superman" type="submit" value="superman" onclick="myFunction2();"></div>
+            <div id="im" class="myButton col-lg-2"><input id="ironman" type="submit" value="ironman" onclick="myFunction3();"></div>
+            <div id="wvrn" class="myButton col-lg-2"><input id="wolverine" type="submit" value="wolverine" onclick="myFunction4();"></div>
+            <div id="dp" class="myButton col-lg-2"><input id="deadpool" type="submit" value="deadpool" onclick="myFunction5();"></div>
+            <div id="spdrm" class="myButton col-lg-2"><input id="spiderman" type="submit" value="spiderman" onclick="myFunction6();"></div>
+
+        </div>
+
+        <div class="vilanpic">
+
+            <img id="qmark" src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/black-ink-grunge-stamps-textures-icons-alphanumeric/068714-black-ink-grunge-stamp-textures-icon-alphanumeric-question-mark1-ps.png"
+                alt="questionmark" height="400" width="400">
+            <h1 id="bne">BANE</h1>    
+            <img class="vpic" id="banepic" src="http://static.comicvine.com/uploads/original/12/123441/2391520-bane_2.jpg" alt="Bane" height="400"
+                width="400">
+            <h1 id="ll">LEX LUTHOR</h1>  
+            <img class="vpic" id="lexpic" src="http://media.mcm.fr/article-2779591-thumb-f20128079/suicide-squad-lex-luthor-present-dans-le.jpg" alt="Lex Luther" height="400" width="400">
+            <h1 id="imong">IRON MONGER</h1>  
+            <img class="vpic" id="mongerpic" src="https://static.comicvine.com/uploads/scale_medium/8/84205/3550465-3544399-ironmonger5.jpg" alt="Ironmonger" height="400" width="400">
+            <h1 id="mn">MAGNETO</h1>  
+            <img class="vpic" id="magpic" src="http://www.2-clicks-comics.com/images/category_image/Magneto%20comics.jpg" alt="Magneto" height="400" width="400">
+            <h1 id="tr">T-RAY</h1>  
+            <img class="vpic" id="traypic" src="https://static.comicvine.com/uploads/original/1/15659/1805176-t_ray_deadpool_14.jpg" alt="T-ray" height="400" width="400">
+            <h1 id="do">DR OCTOPUS</h1>  
+            <img class="vpic" id="dococtpic" src="https://s-media-cache-ak0.pinimg.com/originals/4d/ea/66/4dea6638477d77978f4ac6c0862bd75b.jpg" alt="Dr Octopus" height="400" width="400">
+
+
+
+        </div>
+
+
+    </div>
+
+</body>
+
+<script>
+
+    var bane = document.getElementById('banepic');
+    var lex = document.getElementById('lexpic');
+    var monger = document.getElementById('mongerpic');
+    var magneto = document.getElementById('magpic');
+    var tRay = document.getElementById('traypic');
+    var docOctopus = document.getElementById('dococtpic');
+
+    var banetext = document.getElementById('bne');
+    var lexttext = document.getElementById('ll');
+    var mongertext = document.getElementById('imong');
+    var magtext = document.getElementById('mn');
+    var traytext = document.getElementById('tr');
+    var doctext = document.getElementById('do');
+
+
+
+    function myFunction1() {
+
+        document.getElementById('lexpic').style.display = "none";
+        document.getElementById('mongerpic').style.display = "none";
+        document.getElementById('magpic').style.display = "none";
+        document.getElementById('traypic').style.display = "none";
+        document.getElementById('dococtpic').style.display = "none";
+
+        var x = document.getElementById("batman");
+        var Shero = x.value;
+        var newHero = heros.find(function (newHero) {
+            if (newHero.name === Shero) {
+                var newVilan = newHero.vilan;
+                newVilan = bane;
+                banetext.style.display = "block";
+                lexttext.style.display = "none";
+                mongertext.style.display = "none";
+                magtext.style.display = "none";
+                traytext.style.display = "none";
+                doctext.style.display = "none";
+                newVilan.style.display = "block";
+                newVilan.style.margin = "80px auto 40px auto";
+                document.getElementById("qmark").style.position = "absolute";
+                document.getElementById("qmark").style.left = "-99999px";
+            }
+        });
+    }
+
+    function myFunction2() {
+
+        document.getElementById('banepic').style.display = "none";
+        document.getElementById('mongerpic').style.display = "none";
+        document.getElementById('magpic').style.display = "none";
+        document.getElementById('traypic').style.display = "none";
+        document.getElementById('dococtpic').style.display = "none";
+
+        x = document.getElementById("superman");
+        var Shero = x.value;
+        var newHero = heros.find(function (newHero) {
+            if (newHero.name === Shero) {
+                var newVilan = newHero.vilan;
+                newVilan = lex;
+                banetext.style.display = "none";
+                lexttext.style.display = "block";
+                mongertext.style.display = "none";
+                magtext.style.display = "none";
+                traytext.style.display = "none";
+                doctext.style.display = "none";
+                newVilan.style.display = "block";
+                newVilan.style.transition = "3s";
+                newVilan.style.margin = "80px auto 40px auto";
+                document.getElementById("qmark").style.position = "absolute";
+                document.getElementById("qmark").style.left = "-99999px";
+                
+            }
+        });
+    }
+
+    function myFunction3() {
+
+        document.getElementById('banepic').style.display = "none";
+        document.getElementById('lexpic').style.display = "none";
+        document.getElementById('magpic').style.display = "none";
+        document.getElementById('traypic').style.display = "none";
+        document.getElementById('dococtpic').style.display = "none";
+
+        x = document.getElementById("ironman");
+        var Shero = x.value;
+        var newHero = heros.find(function (newHero) {
+            if (newHero.name === Shero) {
+                var newVilan = newHero.vilan;
+                newVilan = monger;
+                banetext.style.display = "none";
+                lexttext.style.display = "none";
+                mongertext.style.display = "block";
+                magtext.style.display = "none";
+                traytext.style.display = "none";
+                doctext.style.display = "none";
+                newVilan.style.display = "block";
+                newVilan.style.filter = "opacity(80%)";
+                newVilan.style.transition = "7s";
+                newVilan.style.margin = "80px auto 40px auto";
+                document.getElementById("qmark").style.position = "absolute";
+                document.getElementById("qmark").style.left = "-99999px";
+                
+            }
+        });
+    }
+
+    function myFunction4() {
+
+        document.getElementById('banepic').style.display = "none";
+        document.getElementById('mongerpic').style.display = "none";
+        document.getElementById('lexpic').style.display = "none";
+        document.getElementById('traypic').style.display = "none";
+        document.getElementById('dococtpic').style.display = "none";
+
+        x = document.getElementById("wolverine");
+        var Shero = x.value;
+        var newHero = heros.find(function (newHero) {
+            if (newHero.name === Shero) {
+                var newVilan = newHero.vilan;
+                newVilan = magneto;
+                banetext.style.display = "none";
+                lexttext.style.display = "none";
+                mongertext.style.display = "none";
+                magtext.style.display = "block";
+                traytext.style.display = "none";
+                doctext.style.display = "none";
+                newVilan.style.display = "block";
+                newVilan.style.filter = "opacity(80%)";
+                newVilan.style.transition = "7s";
+                newVilan.style.margin = "80px auto 40px auto";
+                document.getElementById("qmark").style.position = "absolute";
+                document.getElementById("qmark").style.left = "-99999px";
+                
+            }
+        });
+    }
+
+    function myFunction5() {
+
+        document.getElementById('banepic').style.display = "none";
+        document.getElementById('mongerpic').style.display = "none";
+        document.getElementById('magpic').style.display = "none";
+        document.getElementById('lexpic').style.display = "none";
+        document.getElementById('dococtpic').style.display = "none";
+        
+        x = document.getElementById("deadpool");
+        var Shero = x.value;
+        var newHero = heros.find(function (newHero) {
+            if (newHero.name === Shero) {
+                var newVilan = newHero.vilan;
+                newVilan = tRay;
+                banetext.style.display = "none";
+                lexttext.style.display = "none";
+                mongertext.style.display = "none";
+                magtext.style.display = "none";
+                traytext.style.display = "block";
+                doctext.style.display = "none";
+                newVilan.style.display = "block";
+                newVilan.style.filter = "opacity(80%)";
+                newVilan.style.transition = "7s";
+                newVilan.style.margin = "80px auto 40px auto";
+                document.getElementById("qmark").style.position = "absolute";
+                document.getElementById("qmark").style.left = "-99999px";
+                
+            }
+        });
+    }
+
+    function myFunction6() {
+
+        document.getElementById('banepic').style.display = "none";
+        document.getElementById('mongerpic').style.display = "none";
+        document.getElementById('magpic').style.display = "none";
+        document.getElementById('traypic').style.display = "none";
+        document.getElementById('lexpic').style.display = "none";
+        
+        x = document.getElementById("spiderman");
+        var Shero = x.value;
+        var newHero = heros.find(function (newHero) {
+            if (newHero.name === Shero) {
+                var newVilan = newHero.vilan;
+                newVilan = docOctopus;
+                banetext.style.display = "none";
+                lexttext.style.display = "none";
+                mongertext.style.display = "none";
+                magtext.style.display = "none";
+                traytext.style.display = "none";
+                doctext.style.display = "block";
+                newVilan.style.display = "block";
+                newVilan.style.filter = "opacity(80%)";
+                newVilan.style.transition = "7s";
+                newVilan.style.margin = "80px auto 40px auto";
+                document.getElementById("qmark").style.position = "absolute";
+                document.getElementById("qmark").style.left = "-99999px";
+                
+            }
+        });
+    }
+
+    var heros = [
+
+        { name: 'batman', vilan: 'bane' },
+        { name: 'superman', vilan: 'lex luther' },
+        { name: 'ironman', vilan: 'iron monger' },
+        { name: 'wolverine', vilan: 'magneto' },
+        { name: 'deadpool', vilan: 'T-ray' },
+        { name: 'spiderman', vilan: 'dr octopus' }
+
+        ];
+
+</script>
+
+
+</html>

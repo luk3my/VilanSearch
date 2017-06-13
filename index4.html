@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Super Vilan search</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Fonts -->
+
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <h1>Who is the arch nemisis of....</h1>
+
+
+        <div class="Supervilan row">
+
+            <div id="bm" class="myButton col-lg-2"><input id="batman" type="submit" value="batman" onclick="myFunction1();"></div>
+            <div id="sm" class="myButton col-lg-2"><input id="superman" type="submit" value="superman" onclick="myFunction2();"></div>
+            <div id="im" class="myButton col-lg-2"><input id="ironman" type="submit" value="ironman" onclick="myFunction3();"></div>
+            <div id="wvrn" class="myButton col-lg-2"><input id="wolverine" type="submit" value="wolverine" onclick="myFunction4();"></div>
+            <div id="dp" class="myButton col-lg-2"><input id="deadpool" type="submit" value="deadpool" onclick="myFunction5();"></div>
+            <div id="spdrm" class="myButton col-lg-2"><input id="spiderman" type="submit" value="spiderman" onclick="myFunction6();"></div>
+
+        </div>
+
+        <div class="vilanpic">
+
+            <img id="qmark" src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/black-ink-grunge-stamps-textures-icons-alphanumeric/068714-black-ink-grunge-stamp-textures-icon-alphanumeric-question-mark1-ps.png"
+                alt="questionmark" height="400" width="400">
+            <img id="banepic" src="http://static.comicvine.com/uploads/original/12/123441/2391520-bane_2.jpg" alt="Bane" height="400"
+                width="400">
+            <img id="lexpic" src="http://media.mcm.fr/article-2779591-thumb-f20128079/suicide-squad-lex-luthor-present-dans-le.jpg" alt="Lex Luther" height="400" width="400">
+            <img id="mongerpic" src="https://static.comicvine.com/uploads/scale_medium/8/84205/3550465-3544399-ironmonger5.jpg" alt="Ironmonger" height="400" width="400">
+            <img id="magpic" src="http://www.2-clicks-comics.com/images/category_image/Magneto%20comics.jpg" alt="Magneto" height="400" width="400">
+            <img id="traypic" src="https://static.comicvine.com/uploads/original/1/15659/1805176-t_ray_deadpool_14.jpg" alt="T-ray" height="400" width="400">
+            <img id="dococtpic" src="https://s-media-cache-ak0.pinimg.com/originals/4d/ea/66/4dea6638477d77978f4ac6c0862bd75b.jpg" alt="Dr Octopus" height="400" width="400">
+
+
+
+        </div>
+
+
+    </div>
+
+</body>
+
+<script>
+
+
+    function myFunction1() {
+        x = document.getElementById("batman");
+        var Shero = x.value;
+        var newHero = heros.find(function (newHero) {
+            if (newHero.name === Shero) {
+                var newVilan = newHero.vilan;
+                alert(newVilan);
+                
+            }
+        });
+    }
+
+    function myFunction2() {
+        x = document.getElementById("superman");
+        var Shero = x.value;
+        var newHero = heros.find(function (newHero) {
+            if (newHero.name === Shero) {
+                var newVilan = newHero.vilan;
+                alert(newVilan);
+            }
+        });
+    }
+
+    function myFunction3() {
+        x = document.getElementById("ironman");
+        var Shero = x.value;
+        var newHero = heros.find(function (newHero) {
+            if (newHero.name === Shero) {
+                var newVilan = newHero.vilan;
+                alert(newVilan);
+            }
+        });
+    }
+
+    function myFunction4() {
+        x = document.getElementById("wolverine");
+        var Shero = x.value;
+        var newHero = heros.find(function (newHero) {
+            if (newHero.name === Shero) {
+                var newVilan = newHero.vilan;
+                alert(newVilan);
+            }
+        });
+    }
+
+    function myFunction5() {
+        x = document.getElementById("deadpool");
+        var Shero = x.value;
+        var newHero = heros.find(function (newHero) {
+            if (newHero.name === Shero) {
+                var newVilan = newHero.vilan;
+                alert(newVilan);
+            }
+        });
+    }
+
+    function myFunction6() {
+        x = document.getElementById("spiderman");
+        var Shero = x.value;
+        var newHero = heros.find(function (newHero) {
+            if (newHero.name === Shero) {
+                var newVilan = newHero.vilan;
+                alert(newVilan);
+            }
+        });
+    }
+
+    var heros = [
+
+        { name: 'batman', vilan: 'bane' },
+        { name: 'superman', vilan: 'lex luther' },
+        { name: 'ironman', vilan: 'iron monger' },
+        { name: 'wolverine', vilan: 'magneto' },
+        { name: 'deadpool', vilan: 'T-ray' },
+        { name: 'spiderman', vilan: 'dr octopus' }
+
+        ];
+
+</script>
+
+
+</html>
